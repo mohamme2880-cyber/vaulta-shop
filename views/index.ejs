@@ -2,16 +2,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Vaulta Store</title>
+<title>Vaulta</title>
 <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
 
 <header class="hero">
+<img src="/logo.png" class="logo">
 <h1>VAULTA STORE</h1>
-<p>Premium Digital Products</p>
-<a href="/products" class="btn">Browse Products</a>
+<p>متجر المنتجات الرقمية</p>
+<a href="/store" class="btn">دخول المتجر</a>
 </header>
+
+<section class="cats">
+<a class="cat">البوتات</a>
+<a class="cat">النيتروهات</a>
+<a class="cat">البوستات</a>
+<a class="cat">الكريدت</a>
+</section>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Store</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<h1 class="title">المتجر</h1>
+
+<div class="products">
+
+<% products.forEach(p=>{ %>
+
+<div class="card">
+<h2><%= p.name %></h2>
+<p><%= p.desc %></p>
+<span>$<%= p.price %></span>
+<a href="/buy/<%= p.name %>" class="buy">شراء</a>
+</div>
+
+<% }) %>
+
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="success">
+<h1>تم إنشاء الطلب</h1>
+<p>المنتج: <%= product %></p>
+<p>افتح تذكرة دسكورد لإكمال الطلب</p>
+<a class="btn" href="https://discord.gg/FhyVcYxc7">فتح التذكرة</a>
+</div>
 
 </body>
 </html>
