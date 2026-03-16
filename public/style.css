@@ -1,48 +1,61 @@
 
 body{
-background:#0f0f0f;
+background:#0c0c0c;
 color:white;
 font-family:Arial;
 margin:0;
+text-align:center;
 }
 
 .hero{
-text-align:center;
-padding:140px;
+padding:120px 20px;
 background:linear-gradient(135deg,#1a1a1a,#000);
 }
 
+.logo{
+width:120px;
+margin-bottom:20px;
+}
+
 .hero h1{
-font-size:70px;
+font-size:60px;
 letter-spacing:3px;
 }
 
 .btn{
-background:#6c5cff;
-padding:15px 30px;
+background:#6c6c6c;
+padding:12px 25px;
 color:white;
 text-decoration:none;
 border-radius:8px;
 }
 
-.title{
-text-align:center;
+.cats{
 margin-top:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.cat{
+background:#1a1a1a;
+padding:12px 20px;
+border-radius:6px;
 }
 
 .products{
 display:flex;
 justify-content:center;
-gap:40px;
+gap:30px;
 padding:60px;
+flex-wrap:wrap;
 }
 
 .card{
 background:#1a1a1a;
-padding:30px;
-width:260px;
+padding:25px;
+width:250px;
 border-radius:10px;
-text-align:center;
 transition:0.3s;
 }
 
@@ -52,8 +65,8 @@ transform:scale(1.05);
 
 .buy{
 display:block;
-margin-top:15px;
-background:#6c5cff;
+margin-top:10px;
+background:#6c6c6c;
 padding:10px;
 color:white;
 text-decoration:none;
@@ -61,6 +74,5 @@ border-radius:6px;
 }
 
 .success{
-text-align:center;
-margin-top:150px;
+margin-top:120px;
 }
